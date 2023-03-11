@@ -1,0 +1,260 @@
+/*CSS Document for The Office website by Group 3 2023*/
+
+/*=================================
+Variables
+===================================*/
+:root{
+    --darkblue: #2A3C5F;
+    --cream: #EDEFE2;
+    --gray: #727980;
+    --lightblue: #4BA8B2;
+    --black: #000000;
+}
+
+/*=================================
+Universal Styling
+===================================*/
+
+*{
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+body{
+   background-color: var(--cream);
+}
+
+main{min-height: 100vh;}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+   padding: 10px 0;
+   font-family: "Special Elite", "Times New Roman", serif;
+}
+
+h1{
+   font-size: 56px;
+}
+
+p{
+   line-height: 140%;
+   margin: 10px 0;
+}
+
+ul,
+p,
+a{
+   font-family: Merriweather, cambria, serif;
+}
+
+.mainContainer{
+   max-width: 900px;
+   margin: 0 auto;
+}
+
+
+/*=================================
+Header Styling
+===================================*/
+
+header{
+   position: fixed;
+   width: 100%;
+   background: var(--black);
+   padding: 20px 0;
+   z-index: 4;
+}
+
+.colorchange{
+   display: inline-block;
+   margin: 0 15px;
+   text-decoration: none;
+   font-weight: bold;
+   color: var(--cream);
+}
+
+.scale{
+   transition: all .1s ease-in-out;
+}
+
+.scale:hover{
+   transform: scale(1.3);
+}
+
+.colorchange:hover{
+ animation: colorchange 0.25s linear;
+ }
+
+@keyframes colorchange{
+ 0% {color: var(--cream);}
+ 50% {color: var(--lightblue);}
+ 100% {color: var(--cream);}
+}
+
+header .mainContainer{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+/*=================================
+Hero Image Styling
+===================================*/
+
+.heroBanner{
+   position: relative;
+}
+
+.heroBanner_overlay{
+   position: absolute;
+   bottom: 20px;
+   left: 0;
+   right: 0;
+   max-width: 900px;
+   margin: 0 auto;
+   color: var(--cream);
+}
+
+
+.heroBanner img{
+   object-fit: cover;
+   width: 100%;
+   display: block;
+}
+
+/*=================================
+Example Containers Styling
+===================================*/
+
+.cardContainer{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.contentCard{
+   width: 30%;
+   margin: 3px;
+   border-bottom: 1px solid var(--gray);
+   
+}
+
+.contentCard img{
+   height: 150px;
+   object-fit: cover;
+}
+
+.contentCard_expandInfo {
+   list-style: none;
+   font-weight: bold;
+   display: none;
+}
+
+.contentCard_expandInfo li{
+   margin: 10px 0;
+}
+
+.contentCard_expandInfo li a{
+   color: var(--lightblue);
+}
+
+.contentCard:hover .contentCard_expandInfo{
+   display: block;
+}
+
+
+/*=================================
+Footer Styling
+===================================*/
+
+footer{
+   background-color: var(--darkblue);
+   text-align: center;
+   color: var(--cream);
+   padding: 20px 0;
+   bottom: 0;
+   width: 100%;
+}
+
+/*=================================
+Tablet Media Query
+===================================*/
+
+@media screen and (max-width: 768px){
+
+   .mainContainer{
+       width: 90%;
+       margin: auto;
+       display: flex;
+       flex-direction: column;
+       padding: 5px;
+   }
+   
+
+.contentCard{
+   width: 300px;
+}
+
+.contentCard img{
+   width:100% ;
+   height: auto;
+   }
+
+.contentCard_expandInfo{
+   display: block;
+   }
+     
+}
+
+/*=================================
+Mobile Device Media Query
+===================================*/
+
+@media screen and (max-width: 480px){
+       
+   nav{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .mainContainer{
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       padding: 5px;
+   }
+   
+.cardContainer{
+   display: block;
+   }
+
+.contentCard{
+   display: block;
+   width: 100%;
+   margin: 3px 0;
+
+   }
+
+.contentCard img{
+   width: 100%;
+   height: auto;
+   }
+
+.contentCard_expandInfo{
+   display: block;
+   }
+   
+}
+   
+
+
+
+
+
+
+
