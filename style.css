@@ -138,7 +138,7 @@ Example Containers Styling
 
 .contentCard{
    width: 30%;
-   margin: 3px;
+   margin: 5px;
    border-bottom: 1px solid var(--gray);
    
 }
@@ -146,6 +146,7 @@ Example Containers Styling
 .contentCard img{
    height: 150px;
    object-fit: cover;
+   width: 100%;
 }
 
 .contentCard_expandInfo {
