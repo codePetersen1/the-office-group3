@@ -159,7 +159,7 @@ Example Containers Styling
    margin: 10px 0;
 }
 
-.contentCard_expandInfo li a{
+.contentCard_expandInfo li a, .videoContainer a{
    color: var(--lightblue);
 }
 
