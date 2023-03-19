@@ -159,7 +159,7 @@ Example Containers Styling
    margin: 10px 0;
 }
 
-.contentCard_expandInfo li a{
+.contentCard_expandInfo li a, .videoContainer a{
    color: var(--lightblue);
 }
 
@@ -177,8 +177,6 @@ Example Containers Styling
 
 
 .videoContainer_video .videoContainer_vidContent{
-    width: 100%;
-    height: 600;
     position: absolute;
     top: 0;
     left: 0;
