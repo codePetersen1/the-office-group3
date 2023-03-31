@@ -119,7 +119,15 @@ Hero Image Styling
    margin: 0 auto;
    color: var(--cream);
 }
-
+.DM_history{
+   position: absolute;
+   bottom: 20px;
+   left: 0;
+   right: 0;
+   max-width: 900px;
+   margin: 0 auto;
+   color: var(--black);
+}
 
 .heroBanner img{
    object-fit: cover;
