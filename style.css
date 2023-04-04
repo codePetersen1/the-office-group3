@@ -358,7 +358,7 @@ Creed Thoughts Styling
    padding-right: 10px;
 }
 
-@media screen and (min-width: 375px){
+@media screen and (min-width: 279px){
    .creed--main {
       width: 100%;
       display: flex;
@@ -380,16 +380,27 @@ Creed Thoughts Styling
    }
 
    .creed--title__mobile {
-      font-size: 3vw;
+      font-size: 3.8vw;
    }
 
    .creedBanner_overlay {
       padding-left: 15px;
    }
+
+   .creed--img {
+      width: 90%;
+      height: 90%;
+   }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 767px){
    .creed__flex {
       flex-direction: column;
+   }
+}
+
+@media screen and (min-width: 1049px) {
+   .creed--title__mobile {
+      font-size: 2.4vw;
    }
 }
