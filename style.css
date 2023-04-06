@@ -338,13 +338,30 @@ Creed Thoughts Styling
    margin-top: 10px;
    margin-bottom: 10px;
    border: solid #000000;
-   border-radius: 12px;
+   border-radius: 12px; 
+}
+
+.creed--button > a {
+   text-decoration: none;
+   font-family: serif;
+   font-size: 17px;
+   color: var(--black);
+}
+
+.creed--button > a:hover {
+   color: var(--cream);
+   transition: .5s;
+}
+
+.creed--title__main:hover {
+   color: var(--lightblue);
+   transition: .5s;
 }
 
 .creed--button:hover {
    color: var(--cream);
    background-color: var(--darkblue);
-   transition: 1s;
+   transition: .5s;
    animation: hover 1s infinite alternate linear;
    cursor: pointer;
 }
@@ -388,7 +405,7 @@ Creed Thoughts Styling
    }
 
    .creed--title__mobile {
-      font-size: 3.8vw;
+      font-size: 3.0vw;
    }
 
    .creedBanner_overlay {
@@ -409,6 +426,6 @@ Creed Thoughts Styling
 
 @media screen and (min-width: 1049px) {
    .creed--title__mobile {
-      font-size: 2.4vw;
+      font-size: 2.5vw;
    }
 }
