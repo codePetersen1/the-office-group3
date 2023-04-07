@@ -119,6 +119,9 @@ Hero Image Styling
    margin: 0 auto;
    color: var(--cream);
 }
+/*================
+History header. I just changed the color from cream to black.
+==================*/
 .DM_history{
    position: absolute;
    bottom: 20px;
@@ -278,6 +281,35 @@ Mobile Device Media Query
    }
 
 }
+
+
+/*==========================
+History Button
+============================*/
+.DMhistory_button {
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+   background-color: #000000;
+ }   
+ /*==================================
+ Grid for DM History article content
+ =====================================*/
+
+ .grid_parent {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(4, 1fr);
+   grid-column-gap: 5px;
+   grid-row-gap: 5px;
+   justify-items: center;
+   }
    
 /*=================================
 Creed Thoughts Styling
@@ -377,6 +409,7 @@ Creed Thoughts Styling
    margin: auto;
    padding: 20px;
 }
+
 
 .creed--text {
    padding-left: 10px;
