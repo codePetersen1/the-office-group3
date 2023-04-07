@@ -310,6 +310,21 @@ History Button
    grid-row-gap: 5px;
    justify-items: center;
    }
+
+   /*=================================
+DM History Containers Styling
+===================================*/
+.grid_container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 1fr;
+   grid-column-gap: 5px;
+   grid-row-gap: 0px;
+   }
+   ul{
+      list-style-type: none;
+   }
+ 
    
 /*=================================
 Creed Thoughts Styling
