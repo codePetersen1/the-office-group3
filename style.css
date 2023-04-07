@@ -257,7 +257,7 @@ Mobile Device Media Query
        width: 100%;
        display: flex;
        flex-direction: column;
-       padding: 5px;
+       padding: 5px 0;
    }
    
 .cardContainer{
