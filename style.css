@@ -279,8 +279,9 @@ Mobile Device Media Query
 .contentCard_expandInfo{
    display: block;
    }
-   
+
 }
+
 
 /*==========================
 History Button
@@ -309,10 +310,155 @@ History Button
    grid-row-gap: 5px;
    justify-items: center;
    }
+   
+/*=================================
+Creed Thoughts Styling
+===================================*/
+
+.creedBanner_overlay {
+   position: absolute;
+   bottom: 20px;
+   left: 0;
+   right: 0;
+   max-width: 900px;
+   margin: 0 auto;
+   color: var(--black);
+   font-size: 30px;
+}
+
+.creed--main {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   padding: 5px;
+   max-width: 900px;
+   margin: 0 auto;
+   flex-wrap: wrap;
+}
+
+.creed--main__background {
+   background-color: white;
+   padding: 10px;
+   margin-top: 25px;
+   margin-bottom: 25px;
+}
+
+.creed--img__format {
+   display: flex;
+   flex-direction: column;
+   margin: left;
+   max-width: 480px;
+}
+
+.creed--img {
+   padding: 10px;
+   margin: right;
+}
+
+.creed__flex {
+   max-width: 900px;
+   display: flex;
+}
+
+.creed--button {
+   max-width: 2500px;
+   padding: 10px;
+   background-color: var(--lightblue);
+   font-family: serif;
+   font-size: 17px;
+   margin: auto;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border: solid #000000;
+   border-radius: 12px; 
+}
+
+.creed--button > a {
+   text-decoration: none;
+   font-family: serif;
+   font-size: 17px;
+   color: var(--black);
+}
+
+.creed--button > a:hover {
+   color: var(--cream);
+   transition: .5s;
+}
+
+.creed--title__main:hover {
+   color: var(--lightblue);
+   transition: .5s;
+}
+
+.creed--button:hover {
+   color: var(--cream);
+   background-color: var(--darkblue);
+   transition: .5s;
+   animation: hover 1s infinite alternate linear;
+   cursor: pointer;
+}
+
+@keyframes hover {
+   to {
+      transform: translateY(6px);
+   }
+}
+
+.creed--video {
+   display: flex;
+   margin: auto;
+   padding: 20px;
+}
 
 
+.creed--text {
+   padding-left: 10px;
+   padding-right: 10px;
+}
 
+@media screen and (min-width: 279px){
+   .creed--main {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+   }
 
+   .creed--main__background {
+      width: 90%;
+   }
+   
+   .creed--text {
+      width: 90%;
+      display: flex;
+      flex-direction: column; 
+   }
 
+   .creed--video {
+      width: 70%;
+   }
 
+   .creed--title__mobile {
+      font-size: 3.0vw;
+   }
 
+   .creedBanner_overlay {
+      padding-left: 15px;
+   }
+
+   .creed--img {
+      width: 90%;
+      height: 90%;
+   }
+}
+
+@media screen and (max-width: 767px){
+   .creed__flex {
+      flex-direction: column;
+   }
+}
+
+@media screen and (min-width: 1049px) {
+   .creed--title__mobile {
+      font-size: 2.5vw;
+   }
+}
