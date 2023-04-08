@@ -238,7 +238,7 @@ Tablet Media Query
 .contentCard_expandInfo{
    display: block;
    }
-     
+
 }
 
 /*=================================
@@ -280,6 +280,10 @@ Mobile Device Media Query
    display: block;
    }
 
+   .mainContainer .grid_parent {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);}
+
 }
 
 
@@ -305,26 +309,25 @@ History Button
  .grid_parent {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   grid-template-rows: repeat(4, 1fr);
    grid-column-gap: 5px;
    grid-row-gap: 5px;
    justify-items: center;
    }
 
+   .grid_parent img{
+      width: 100%;
+   }
+
+   .contentCard ul li{
+      list-style-type: none;
+   }
+
+
+
    /*=================================
 DM History Containers Styling
 ===================================*/
-.grid_container {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: 1fr;
-   grid-column-gap: 5px;
-   grid-row-gap: 0px;
-   }
-   ul{
-      list-style-type: none;
-   }
- 
+
    
 /*=================================
 Creed Thoughts Styling
